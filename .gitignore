@@ -205,3 +205,7 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# user settings
+#  User settings for the Intelligent Banking project.
+artifacts/*
