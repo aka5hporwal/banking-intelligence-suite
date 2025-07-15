@@ -26,6 +26,16 @@ except Exception as e:
     logger.exception(e)
     raise e
 
+STAGE_NAME = "Model Trainer"
+try:
+    logger.info(f">>>>> stage {STAGE_NAME} started <<<<<")
+    from intelligentBanking.pipeline.stage_03_model_trainer import ModelTrainerPipeline
+    model_trainer_pipeline = ModelTrainerPipeline()
+    model_trainer_pipeline.main()
+    logger.info(f">>>>> stage {STAGE_NAME} completed <<<<<")
+except Exception as e:
+    logger.exception(e)
+    raise e
 
 
 
