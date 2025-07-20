@@ -1,4 +1,5 @@
 tensorflow==2.13.0
+typing_extensions==4.14.1
 pandas 
 gdown
 dvc

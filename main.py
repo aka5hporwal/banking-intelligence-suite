@@ -38,4 +38,16 @@ except Exception as e:
     raise e
 
 
+STAGE_NAME = "Model Evaluation"
+try:
+    logger.info(f">>>>> stage {STAGE_NAME} started <<<<<")
+    from intelligentBanking.pipeline.stage_04_model_evaluation import ModelEvaluationPipeline
+    model_evaluation_pipeline = ModelEvaluationPipeline()
+    model_evaluation_pipeline.main()
+    logger.info(f">>>>> stage {STAGE_NAME} completed <<<<<")
+except Exception as e:
+    logger.exception(e)
+    raise e
+
+
 

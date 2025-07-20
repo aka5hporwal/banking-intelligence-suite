@@ -209,3 +209,4 @@ __marimo__/
 # user settings
 #  User settings for the Intelligent Banking project.
 artifacts/*
+mlruns/*
